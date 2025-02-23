@@ -1,0 +1,17 @@
+<h2>Employee Registered Data</h2>
+<table border="1" [cellPadding]="20" [cellSpacing]="10"
+rules="all">
+<thead>
+<tr>
+<th>SI.NO</th><th>NAME</th><th>ACTION</th>
+9
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let em of ar;let i=index">
+<td>{{i+1}}</td><td>{{em.name}}</td>
+<td><a routerLink="/detail/{{em.id}}">View
+Data</a></td>
+</tr>
+</tbody>
+</table>

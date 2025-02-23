@@ -1,0 +1,18 @@
+body tr:nth-child(even){ background-color: gray;}
+tbody tr:nth-child(odd){ background-color: beige;}
+thead tr{
+background-color: black;color:whitesmoke;
+font-weight: bold;
+}
+table{ width:100%; }
+tbody td{ font-size: 30px; }
+thead th{ font-size: 35px; }
+tbody tr:hover{ background-color: aqua; }
+
+a{
+padding:10px;
+text-decoration: none;
+color:blue;
+font-weight: bold;
+}
+a:hover{ background-color: pink; }
