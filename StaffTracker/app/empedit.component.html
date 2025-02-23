@@ -1,0 +1,24 @@
+<h2>Employee Modification Form</h2>
+<form (ngSubmit)="modifydata()">
+<table>
+<tr>
+<td><label>Enter Name</label></td>
+<td><input type="text" [(ngModel)]="empobj.name"
+#name="ngModel" name="name"></td>
+</tr>
+<tr>
+    <td><label>Enter Department</label></td>
+    <td><input type="text" [(ngModel)]="empobj.dept"
+    #dept="ngModel" name="dept"></td>
+    </tr>
+    <tr>
+    <td><label>Enter Salary</label></td>
+    <td><input type="number" [(ngModel)]="empobj.sal"
+    #sal="ngModel" name="sal"></td>
+    </tr>
+    <tr>
+    <td><input type="submit" value="Save"></td>
+    <td><input type="reset"></td>
+    </tr>
+    </table>
+    </form>
