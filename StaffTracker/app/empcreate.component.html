@@ -1,0 +1,31 @@
+<h2>Employee Registeration Form</h2>
+<form (ngSubmit)="savedata()">
+<table>
+<tr>
+<td><label>Enter Name</label></td>
+<td><input type="text" [(ngModel)]="empobj.name"
+#name="ngModel" name="name"></td>
+</tr>
+<tr>
+<td><label>Enter Department</label></td>
+<td>
+    <select [(ngModel)]="empobj.dept" #dept="ngModel"
+    name="dept">
+    <option>Accounts</option>
+    <option>Admin</option>
+    <option>IT</option>
+    <option>R&D</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td><label>Enter Salary</label></td>
+    <td><input type="number" [(ngModel)]="empobj.sal"
+    #sal="ngModel" name="sal"></td>
+    </tr>
+    <tr>
+    <td><input type="submit"></td>
+    <td><input type="reset"></td>
+    </tr>
+    </table>
+    </form>
