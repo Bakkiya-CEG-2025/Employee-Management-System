@@ -1,0 +1,14 @@
+<h2>Employee Details</h2>
+<table>
+<tr><td>Employee
+Name</td><td>{{empobj.name}}</td></tr>
+<tr><td>Department</td><td>{{empobj.dept}}</td></tr>
+<tr><td>Salary</td><td>{{empobj.sal}}</td></tr>
+<tr>
+<td><button
+routerLink="/edit/{{empobj.id}}">Modify</button></td>
+<td><button
+(click)="deletecode()">Delete</button></td>
+</tr>
+12
+</table>
