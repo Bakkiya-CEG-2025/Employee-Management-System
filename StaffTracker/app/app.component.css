@@ -1,0 +1,9 @@
+a{
+    padding:10px;
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+    }
+    a:hover{
+    background-color: pink;
+    }
